@@ -1,104 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile Page</title>
-  p{color:222221;front-size:180px;}
-    <style>
-        body {
-            background: red;
-            color: 222221;
-            font-family: Arial;
-            padding: 5px;
-        }
-        h1 {
-            font-size: 40px;
-            color: black;
-            text-align: center;
-        }
-        h2 {
-            color: orange;
-            text-align: center;
-        }
-        nav a {
-            margin-right: 15px;
-            color: blue;
-            font-size: 18px;
-        }
-        .section-title {
-            font-size: 32px;
-            font-weight: bold;
-            color: black;
-        }
-        form input {
-            width: 90%;
-            padding: 10px;
-            margin: 5px 0;
-        }
-        ul li {
-            color: yellow;
-            font-size: 18px;
-        }
-        .profile-pic {
-            display: block;
-            margin: auto;
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- PROFILE PICTURE -->
-    <img src="Snapchat-1955851946.jpg" class="profile-pic">
+    <!-- HERO / PROFILE SECTION -->
+    <section class="hero">
+        <img src="Snapchat-1955851946.jpg" alt="My Profile Picture" class="profile-pic">
+        <h1>Alounlopo Damilare</h1>
+        <h2>student • developer • creator</h2>
+    </section>
 
-    <h1>Alounlopo damilare</h1>
-    <h2>student • developer • creator</h2>
-
+    <!-- NAVIGATION -->
     <nav>
-        <a href="#">home</a>
-        <a href="#">about me</a>
-        <a href="#">my profile</a>
-        <a href="#">contact me</a>
+  <nav>
+    <a href="#">home</a>
+    <a href="#">about me</a>
+    <a href="#">my profile</a>
+    <a href="#">contact me</a>
+</nav>
     </nav>
 
-    <br><br>
+    <!-- ABOUT ME -->
+    <section class="about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a student and I love technology.  
+            I learn web development, software skills, and digital tools.
+        </p>
+    </section>
 
-    <div class="section-title">about me</div>
-    <p>
-        I am a student and I love technology.  
-        I learn web development, software skills, and digital tools.
-    </p>
+    <!-- MY PROJECT -->
+    <section class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <ul>
+            <li>Software development</li>
+            <li>Data analyst / Data scientist</li>
+            <li>Computer maintenance & accessories</li>
+            <li>Mobile application development</li>
+        </ul>
+    </section>
 
-    <br>
-
-    <div class="section-title">my project</div>
-
-    <p>This following are my works:</p>
-
-    <ul>
-        <li>software development</li>
-        <li>data analyst / data scientist</li>
-        <li>computer maintenance & accessories</li>
-        <li>mobile application development</li>
-    </ul>
-
-    <br>
-
-    <div class="section-title">contact me</div>
-    
-    <form>
-        <label>Full Name:</label><br>
-        <input type="text" placeholder="Enter your name"><br>
-
-        <label>Email Address:</label><br>
-        <input type="email" placeholder="Enter your email"><br>
-
-        <label>Message:</label><br>
-        <input type="text" placeholder="Your message here"><br>
-    </form>
+    <!-- CONTACT ME -->
+    <section class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+            <input type="text" placeholder="Your Message">
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
 </body>
 </html>
